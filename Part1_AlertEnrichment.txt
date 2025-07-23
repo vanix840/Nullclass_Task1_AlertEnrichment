@@ -1,0 +1,47 @@
+📌 Part 1 – Alert Enrichment Documentation
+Introduction
+In this task, I automated an SOC workflow by enriching alerts (IP addresses) with additional context such as country, region, city, and ISP details using a free IP geolocation API (ip-api.com).
+
+Tools Used
+
+Python 3.x
+
+requests library
+
+CSV files for input/output
+
+Steps Followed
+
+Created a folder D:\Nullclass_Task1.
+
+Created an input file alerts.csv with sample IPs and usernames.
+
+Wrote alert_enrichment.py script to:
+
+Read IPs from alerts.csv,
+
+Query ip-api.com for geolocation,
+
+Write results to enriched_alerts.csv.
+
+Ran the script and verified output.
+
+Code Used
+(See alert_enrichment.py in this folder)
+
+Output
+Example from enriched_alerts.csv:
+
+sql
+Copy code
+ip,user,country,region,city,isp
+8.8.8.8,alice,United States,California,Mountain View,Google LLC
+1.1.1.1,bob,Australia,Queensland,South Brisbane,Cloudflare Inc
+Challenges & Solutions
+
+File not found errors → solved by checking correct folder and enabling file extensions.
+
+Wrong file extension (.txt) → solved by renaming properly to .py and .csv.
+
+Outcome
+Successfully enriched alerts with geolocation data and generated a new CSV output

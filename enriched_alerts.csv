@@ -1,0 +1,3 @@
+ip,user,country,region,city,isp
+8.8.8.8,alice,United States,Virginia,Ashburn,Google LLC
+1.1.1.1,bob,Australia,Queensland,South Brisbane,"Cloudflare, Inc"
